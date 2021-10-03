@@ -56,6 +56,7 @@
         margin:10px 10px 40px 40px;
     text-decoration:none;}
 .nav-wrapper ul li{position:relative;}
+.nav-wrapper ul li:hover{background:#ddd;}
 .show{background:#191919;
     margin:0px;
     padding:10px;
@@ -95,13 +96,13 @@ border:none;
 font-size:24px;
 display:none;}
 
-.left-icons{display:flex;
+.right-icons{display:flex;
     margin-top:20px;
     justify-content:flex-end;
 position:absolute;
 right:30px;}
-.left-icon{margin:10px 10px 10px 10px;}
-.left-icons a{text-decoration:none;
+.right-icon{margin:10px 10px 10px 10px;}
+.right-icons a{text-decoration:none;
 color:#000;}
 .profile{border:none;
 border-radius: 50%;
@@ -110,10 +111,10 @@ width:30px;
 background:#ddd;
 margin-right:40px;
 position:relative;
-}
-.profile img{position:absolute;
-top:3px;
-left:5px;}
+/* overflow:hidden;} */}
+/* .profile img{position:absolute;
+top:0;
+left:0;} */
 .profile span{position:absolute;
    left:25px;
     padding:5px;
@@ -173,12 +174,78 @@ position:relative;}
 top:5px;
 left:10px;
 }
+.prof-pic-r{
+    height:30px;
+    width:30px;
+    align-content:center;
+    position:absolute;
+    right:0px;
+    border-radius:50%;
+}
+
 /* nav ends here */
+/* the left side bar */
 .wrapper{display:grid;}
 .content-container{display:grid;
 grid-template-columns:1fr 2fr 1fr;
-grid-column-gap:2px #fff;}
-.left-sidebar{overflow-y: scroll;}
+grid-column-gap:2px #fff;
+margin:20px;}
+.left-sidebar{overflow-y: scroll;
+font-size:20px;
+
+display:flex;
+flex-direction:column;
+}
+.left-sidebar a{text-decoration:none;
+    color:rgba(0, 0, 0, 0.685);    
+}
+.left-main-profile h5:hover{
+    background:rgba(143, 143, 143, 0.322);
+    border-radius:5px;
+}
+.left-sidebar h5{
+padding:15px;}
+.left-sidebar .profile-pic{height:30px;
+    width:30px;
+    border-radius:50%;
+}
+.left-profile-flex{
+    display: flex;
+
+}
+.left-profile-flex h4{text-align:center;
+justify-content:center;
+padding-left:10px;
+margin-bottom:20px;}
+.left-main-profile{border-bottom:1px solid #191919;}
+.group-shortcuts{padding-top:20px;
+font-family:'Segoe UI';
+font-weight:200;}
+.header{display:flex;
+    justify-content:space-between;
+    position:relative;
+    margin-bottom:0;
+}
+.header h5{
+    color:#19191979;
+}
+.header .edit{
+    border:none;
+    padding-right:15px;
+    background:#ddd;
+    position:absolute;
+    right:0;
+    
+}
+.groups h4{
+    padding-bottom:20px;
+}
+.sidebar-footer{
+    font-size:16px;
+    font-weight:450;
+}
+
+/* this is the main column */
 .main-container{display:flex;
 justify-content:center;
 overflow-y:scroll;
