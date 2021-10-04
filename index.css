@@ -44,7 +44,7 @@
 }
 
 .nav-wrapper{display:flex;
-    justify-content:baseline;
+    justify-content:center;
  
 }
 .nav-wrapper ul {display:flex;
@@ -81,14 +81,14 @@ border-bottom:4px solid rgb(33, 97, 192);}
 .groups{font-size:17px;
 padding:20px;
 position:relative;}
-.fa-users{
+.groups-top{
 border-radius:50%;
 border:2px solid;
 padding:4px 2px;
 position:absolute;
 
 }
-.fa-bars{border-radius:50%;
+.groups-top{border-radius:50%;
     border:2px solid;
     padding:4px 6px;
 position:absolute;
@@ -192,35 +192,69 @@ grid-column-gap:2px #fff;
 margin:20px;}
 .left-sidebar{overflow-y: scroll;
 font-size:20px;
-
 display:flex;
 flex-direction:column;
 }
 .left-sidebar a{text-decoration:none;
     color:rgba(0, 0, 0, 0.685);    
 }
-.left-main-profile h5:hover{
+.left-profile-flex .left-profile-link{display:flex;
+}
+.left-main-profile a:hover{
     background:rgba(143, 143, 143, 0.322);
     border-radius:5px;
 }
 .left-sidebar h5{
 padding:15px;}
-.left-sidebar .profile-pic{height:30px;
+.profile-pic{height:30px;
     width:30px;
+    margin:10px;
     border-radius:50%;
 }
-.left-profile-flex{
-    display: flex;
+.left-friends .left-profile-flex{display:flex;
+position:relative;
 
 }
 .left-profile-flex h4{text-align:center;
-justify-content:center;
+    justify-content:center;
+    padding-left:10px;
+    margin:15px;}
+    .left-main-profile{border-bottom:1px solid #191919;}
+.friends-link{display:flex;
+      text-align:center;}
+.friends-link i{padding:10px;}
+.left-friends .friends-link .friends header{
+    position:absolute;
+    top:15px;
+    left:0
+} 
+.left-watch-link{display:flex;
 padding-left:10px;
-margin-bottom:20px;}
-.left-main-profile{border-bottom:1px solid #191919;}
+}
+.left-groups{
+          margin-bottom:40px;
+     }
+.groups-link{display:flex;
+position:relative;
+}
+.groups-link i{
+    position:absolute;
+    top:15px;
+}
+.groups-link .groups-header{
+    position:absolute;
+    left:40px;
+}
+.left-market{
+    display:flex;
+}
+.market-link{
+    display:flex;
+}
+/* groups shortcuts */
 .group-shortcuts{padding-top:20px;
-font-family:'Segoe UI';
-font-weight:200;}
+    font-family:'Segoe UI';
+    font-weight:200;}
 .header{display:flex;
     justify-content:space-between;
     position:relative;
@@ -269,7 +303,7 @@ overflow-y:scroll;}
     .home,.friends,.groups{padding:10px;}
     .profile, .menu-dots{display:none;}
     .fa-plus-circle{display:block;}
-    .fa-users{display:none;}
+    .groups-top{display:none;}
     .fa-bars{display:block;}
     
 }
