@@ -1,5 +1,6 @@
 *{box-sizing: border-box;
-    margin:0;}
+    margin:0;
+padding:0;}
     body{background:#ddd;}
 .nav{display:flex;
     width:100%;
@@ -42,20 +43,26 @@
     left:5rem;
     top:12px;
 }
-
+/* the central navbar */
 .nav-wrapper{display:flex;
     justify-content:center;
  
 }
 .nav-wrapper ul {display:flex;
+    margin-left:10vw;
+    margin-right:12vw;
+
     list-style:none;
     text-align:center;
     justify-content:center;}
     .nav-wrapper ul li a{color:#000;
         display:flex;
-        margin:10px 10px 40px 40px;
+        
     text-decoration:none;}
-.nav-wrapper ul li{position:relative;}
+.nav-wrapper ul li{position:relative;
+    margin:10px 10px 40px 40px;
+    padding:20px;
+text-align:center;}
 .nav-wrapper ul li:hover{background:#ddd;}
 .show{background:#191919;
     margin:0px;
