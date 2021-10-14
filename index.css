@@ -57,13 +57,16 @@ padding:0;}
     justify-content:center;}
     .nav-wrapper ul li a{color:#000;
         display:flex;
-        
     text-decoration:none;}
+    .nav-wrapper ul li i{
+        font-size:35px;
+    }
 .nav-wrapper ul li{position:relative;
-    margin:10px 10px 40px 40px;
-    padding:20px;
+    margin:5px 40px 5px  40px;
+    padding:10px 40px 20px 40px;
 text-align:center;}
-.nav-wrapper ul li:hover{background:#ddd;}
+.nav-wrapper ul li:hover{background:rgba(221, 221, 221, 0.534);
+border-radius:5px;}
 .show{background:#191919;
     margin:0px;
     padding:10px;
@@ -79,14 +82,12 @@ text-align:center;}
  .active{color:rgb(33, 97, 192);
 border-bottom:4px solid rgb(33, 97, 192);}  
 
-.nav-wrapper ul li a img{margin:20px 20px 0px 0px;}
-    .home{font-size:22px;
-        padding:20px;}
-    .friends{font-size:22px;
-     
+.nav-wrapper ul li a img{margin:0px 0px;
+    height:40px;
+    width:40px;
 }
-.groups{font-size:17px;
-padding:20px;
+
+.groups{
 position:relative;}
 .groups-top{
 border-radius:50%;
@@ -103,6 +104,9 @@ border:none;
 font-size:24px;
 display:none;}
 
+
+
+/* right icons navbar */
 .right-icons{display:flex;
     margin-top:20px;
     justify-content:flex-end;
@@ -111,22 +115,22 @@ right:30px;}
 .right-icon{margin:10px 10px 10px 10px;}
 .right-icons a{text-decoration:none;
 color:#000;}
-.profile{border:none;
+.profile{
+    border:none;
 border-radius: 50%;
 height:30px;
 width:30px;
 background:#ddd;
 margin-right:40px;
 position:relative;
-/* overflow:hidden;} */}
-/* .profile img{position:absolute;
-top:0;
-left:0;} */
+}
 .profile span{position:absolute;
    left:25px;
     padding:5px;
 
 }
+.profile:hover{background:#ddd;
+border-radius:20px;}
 
 .menu{border:none;
     border-radius: 50%;
@@ -135,7 +139,8 @@ left:0;} */
     background:#ddd;
     position:relative;
 }
-.fa-plus-circle{position:absolute;
+.menu:hover{background:#ddd;}
+.circle-dots{position:absolute;
     top:5px;
     left:5px;
     margin:0; 
@@ -207,7 +212,7 @@ flex-direction:column;
 }
 .left-profile-flex .left-profile-link{display:flex;
 }
-.left-main-profile a:hover{
+.left-main-profile div:hover{
     background:rgba(143, 143, 143, 0.322);
     border-radius:5px;
 }
@@ -229,7 +234,8 @@ position:relative;
     .left-main-profile{border-bottom:1px solid #191919;}
 .friends-link{display:flex;
       text-align:center;}
-.friends-link i{padding:10px;}
+.friends-link i{padding:10px;
+color:rgba(36, 117, 184, 0.911);}
 .left-friends .friends-link .friends header{
     position:absolute;
     top:15px;
@@ -238,26 +244,68 @@ position:relative;
 .left-watch-link{display:flex;
 padding-left:10px;
 }
+.left-watch-link img{
+    color:rgba(36, 117, 184, 0.911);
+}
 .left-groups{
-          margin-bottom:40px;
+          margin:15px 0 ;
+          padding-left:10px;
+          display:inline-flex;
+          position:relative;
+          text-align:center;
+         
      }
-.groups-link{display:flex;
-position:relative;
-}
+     .left-groups:hover{background:#ddd;
+    width:100%;}
+
+.groups-link{display:flex;}
 .groups-link i{
-    position:absolute;
-    top:15px;
-}
-.groups-link .groups-header{
-    position:absolute;
-    left:40px;
+    padding-top:15px;
+    color:rgba(36, 117, 184, 0.911);
 }
 .left-market{
     display:flex;
+    padding-left:10px;
 }
 .market-link{
     display:flex;
 }
+.left-saved{
+    display:flex;
+    padding-left:10px;
+}
+.saved-link{display:flex}
+.saved-link i{
+    padding-top:15px;
+    color:rgba(36, 117, 184, 0.911);
+} 
+.left-seemore{display:flex;
+             padding-left:10px;}
+
+.left-seemore-link{
+    display:flex;
+}
+.left-seemore-link i{padding-top:15px;
+    color:rgba(36, 117, 184, 0.911);}
+.left-memories{display:flex;
+    padding-left:10px;}
+
+.memories{
+display:flex;
+}
+.memories i{padding-top:15px;
+    color:rgba(36, 117, 184, 0.911);}
+.showless{display:flex;
+    padding-left:10px;}
+
+.left-showless{
+display:flex;
+}
+.left-showless i{padding-top:15px;
+    color:rgba(36, 117, 184, 0.911);}
+
+
+
 /* groups shortcuts */
 .group-shortcuts{padding-top:20px;
     font-family:'Segoe UI';
