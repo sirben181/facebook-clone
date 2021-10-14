@@ -199,7 +199,7 @@ left:10px;
 /* the left side bar */
 .wrapper{display:grid;}
 .content-container{display:grid;
-grid-template-columns:1fr 2fr 1fr;
+grid-template-columns:1fr 3fr 1fr;
 grid-column-gap:2px #fff;
 margin:20px;}
 .left-sidebar{overflow-y: scroll;
@@ -336,11 +336,45 @@ display:flex;
 
 /* this is the main column */
 .main-container{display:flex;
-justify-content:center;
 overflow-y:scroll;
 }
-.main-container::scrollbar{position:absolute;
-right:0;}
+.singlestatus-profile img{
+    height:35vh;
+    width:10vw;
+    border-radius:10px;
+    margin-left:40px;
+    padding-left:20px;
+}
+.singlestatus1 img{
+    height:35vh;
+    width:10vw;
+    border-radius:10px;
+    margin-left:5px;
+    padding-left:5px;
+}
+.singlestatus2 img{
+    height:35vh;
+    width:10vw;
+    border-radius:10px;
+    margin-left:5px;
+    padding-left:5px;
+}
+.singlestatus3 img{
+    height:35vh;
+    width:10vw;
+    border-radius:10px;
+    margin-left:5px;
+    padding-left:5px;
+}
+.singlestatus4 img{
+    height:35vh;
+    width:10vw;
+    border-radius:10px;
+    margin-left:5px;
+    padding-left:5px;
+}
+.status:hover{zoom:20%;}
+
 .right-sidebar{display:flex;
 justify-content:center;
 overflow-y:scroll;}
