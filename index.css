@@ -81,7 +81,7 @@ border-radius:5px;}
 }
  .show:hover{visibility: visible;} 
  .active{color:rgb(33, 97, 192);
-border-bottom:4px solid rgb(33, 97, 192);}  
+border-bottom:5px solid rgb(33, 97, 192);}  
 
 .nav-wrapper ul li a img{margin:0px 0px;
     height:40px;

@@ -1,8 +1,8 @@
-let bottoms=document.querySelectorAll(".bottom");
-for(i of bottoms){
-    i.addEventListener("click", function(){
-    if(i.classList.contains(".active")){
-        i.classList.remove(".active")
-    } else{i.classList.add('.active')}  
-})}
-   
+const Home=document.querySelector('.navlist')
+
+Home.addEventListener("click",()=>{
+   Home.classList.toggle('active')
+})
+Home.addEventListener('hover',()=>{
+    Home.classList.toggle('show')
+})
