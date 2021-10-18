@@ -68,16 +68,19 @@ padding:0;}
 text-align:center;}
 .nav-wrapper ul li:hover{background:rgba(221, 221, 221, 0.534);
 border-radius:5px;}
-.show{background:#191919;
+.show{
+    height:30px;
+    width:40px;
+    background:#191919;
     margin:0px;
     padding:10px;
     color:#FFF;
     border-radius:10px;
     position:absolute;
     left:40px;
-    bottom:0;
+    bottom:-20px;
     font-size:18px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
  .show:hover{visibility: visible;} 
  .active{color:rgb(33, 97, 192);
