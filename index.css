@@ -347,6 +347,10 @@ overflow-y:scroll;
 /* overflow-x:hidden; */
 width:58vw;
 }
+.main-container-wrapper{
+    display:flex;
+    flex-direction: column;
+}
 .spanning{display:flex;
 }
 .main-wrapper{
@@ -408,9 +412,8 @@ background:#ddd;}
 }
 .input-container{ 
     display:flex;
-    margin-left:50px;
+    margin-left:150px;
     width:100%;
-    position:relative;
 }
 .input-wrapper{
     display:flex;
@@ -422,8 +425,7 @@ background:#ddd;}
     padding-bottom:10px;
     flex-direction:column;
     align-content:center;
-    position:absolute;
-    left:100px
+
 }
 .input-content{
    /* position:relative; */
@@ -505,13 +507,11 @@ background:#ddd;}
 }
 .chatroom-container{
     display:flex;
-    position:relative;
-    left:150px;
-    top:200px;
     flex-direction:column;
     margin-top:20px;
     width:54vw;
-    
+    margin-left:150px;
+    margin-bottom:30px;
     height:80px;
 }
 .chatrooms{
@@ -519,7 +519,8 @@ background:#ddd;}
     background:#fff;
     width:75%;
     margin-right:50px;
-border-radius:6px;}
+border-radius:6px;
+box-shadow:  1px 1px 1px #928e8e;}
 .crooms{display:flex;
     margin:20px;
     padding:10px;
@@ -548,21 +549,55 @@ color:rgb(88, 96, 207);}
     height:50px;
     width:50px;
     border-radius:50%;
+    z-index:1;
 }
 .addmore{
-    background:#eee;
+    
     height:30px;
     width:30px;
     border-radius:50%;
     align-content:center;
-    margin:30px 30px;
-    padding:30px 30px;
     position:absolute;
-    right:-200px;
+    right:90px;
+    top:20px;
+    z-index:2;
 }
 .addmore i{font-size:35px;
-
+    border-radius: 50%;
+   padding:15px 20px;
+   margin:0px 10px;
+   background:rgb(228, 220, 220);
 }
+ .post-container{display:flex;
+    flex-direction:column;
+    margin-left:150px;
+    width:54vw;
+    height:auto;
+}
+.post-wrapper{
+    display:flex;
+    flex-direction:column;
+    width:75%;
+    background:#fff;
+    min-height:100vh;
+    border-radius:10px;
+}
+.post-header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    border-bottom: 2px solid #191919;
+}
+.post-profile{
+    display:flex;
+}
+.post-img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+.post-profile p{font-size:24px;
+font-weight:bold;}
 .right-sidebar{display:flex;
 justify-content:center;
 overflow-y:scroll;}
