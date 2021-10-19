@@ -575,20 +575,21 @@ color:rgb(88, 96, 207);}
     margin-left:150px;
     width:54vw;
     height:auto;
+    padding-bottom:20px;
 
 }
 .post-wrapper{
     display:flex;
     flex-direction:column;
     width:75%;
-    background:#fff;
+    background:#eee;
     min-height:100vh;
     border-radius:10px;
 }
 .postnav{
     display:flex;
     flex-direction:column;
-    border-bottom: 2px solid #191919;
+    border-bottom: 2px solid #c2bebe;
 }
 .postnav span{
     font-size:23px;
@@ -626,7 +627,7 @@ padding-left:5px;}
     margin-right:20px;
     font-size:35px;
     border:none;
-    background:#fff;
+    background:#eee;
     justify-content:center;
     padding:0px 10px 13px 10px;
 }
@@ -642,7 +643,7 @@ width:40.5vw;}
 .likescounter{display:flex;
 justify-content:space-between;
 padding:20px;
-border-bottom:2px solid #191919;}
+border-bottom:2px solid #918e8e;}
 .likescount i{font-size:20px;
     padding-right:10px;
 color:rgb(38, 99, 211);}
@@ -661,6 +662,7 @@ color:rgb(38, 99, 211);
 }
 .like span{font-size:23px;}
 .comment{padding:10px;}
+.comments{padding-bottom:15px;}
 .comment i{
     font-size:25px;
     padding-right:10px;
@@ -714,6 +716,7 @@ flex-direction:column;}
     display:flex;
 }
 .likereply p:hover{text-decoration:underline;}
+.commentbar{border:none;}
 .commentbar-icons{position:absolute;
      top:25px;
      right:40px;
@@ -721,7 +724,7 @@ flex-direction:column;}
 }
 .commentbar i{ padding-right:20px;}
 
-
+/* this is the right sidebar */
 .right-sidebar{display:flex;
 justify-content:center;
 overflow-y:scroll;}
