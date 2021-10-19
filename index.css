@@ -208,10 +208,11 @@ grid-template-columns:1fr 3fr 1fr;
 grid-column-gap:2px #fff;
 margin:20px;
 }
-.left-sidebar{overflow-y: scroll;
+.left-sidebar{ 
 font-size:20px;
 display:flex;
 flex-direction:column;
+
 }
 .left-sidebar a{text-decoration:none;
     color:rgba(0, 0, 0, 0.685);    
@@ -344,7 +345,7 @@ display:flex;
 .main-container{display:flex;
     flex-direction: column;
 overflow-y:scroll;
-/* overflow-x:hidden; */
+overflow-x:hidden;
 width:58vw;
 }
 .main-container-wrapper{
@@ -428,7 +429,7 @@ background:#ddd;}
 
 }
 .input-content{
-   /* position:relative; */
+   position:relative;
     padding-bottom:5px;
     border-bottom:3px solid rgba(156, 138, 138, 0.459);
 }
@@ -446,7 +447,8 @@ background:#ddd;}
 .input-content img{
     position:absolute;
     top:10px;
-    left:20px;
+    left:-30px;
+    margin-right:20px;
     width:50px;
     height:50px;
     border-radius:50%;
@@ -573,6 +575,7 @@ color:rgb(88, 96, 207);}
     margin-left:150px;
     width:54vw;
     height:auto;
+
 }
 .post-wrapper{
     display:flex;
@@ -582,11 +585,23 @@ color:rgb(88, 96, 207);}
     min-height:100vh;
     border-radius:10px;
 }
+.postnav{
+    display:flex;
+    flex-direction:column;
+    border-bottom: 2px solid #191919;
+}
+.postnav span{
+    font-size:23px;
+    padding:20px;
+}
 .post-header{
     display:flex;
     justify-content:space-between;
-    padding:20px;
-    border-bottom: 2px solid #191919;
+    padding:20px 0 0 20px;
+  
+}
+.profilename-cont {display:flex;
+    flex-direction:column;
 }
 .post-profile{
     display:flex;
@@ -596,8 +611,41 @@ color:rgb(88, 96, 207);}
     width:50px;
     border-radius:50%;
 }
-.post-profile p{font-size:24px;
-font-weight:bold;}
+.post-profile .profilename{font-size:24px;
+font-weight:bold;
+}
+.profilename:hover{
+ text-decoration:underline;
+}
+.post-profile small{font-size:23px;
+color:#928e8e;
+padding-right:5px;
+padding-left:5px;}
+
+.post-header button{
+    margin-right:20px;
+    font-size:35px;
+    border:none;
+    background:#fff;
+    justify-content:center;
+    padding:0px 10px 13px 10px;
+}
+.post-header button:hover{background:#ddd;
+   border-radius:50%;
+}
+.postphoto{height:90vh;
+width:40.5vw;}
+.postphoto img{
+    height:100%;
+    width:100%;
+}
+.commentbar{position:relative;}
+.commentbar-icons{position:absolute;
+     top:25px;
+     right:40px;
+    
+}
+.commentbar i{ padding-right:20px;}
 .right-sidebar{display:flex;
 justify-content:center;
 overflow-y:scroll;}
